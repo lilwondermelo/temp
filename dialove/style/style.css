@@ -1,6 +1,10 @@
 .addButton {
     background-image: linear-gradient(to bottom right, rgb(101, 115, 255), rgb(101, 122, 251), rgb(102, 129, 246), rgb(102, 136, 242), rgb(103, 143, 238), rgb(103, 150, 233), rgb(104, 158, 229), rgb(104, 165, 224), rgb(105, 172, 220), rgb(105, 179, 216), rgb(106, 186, 211), rgb(106, 193, 207));
-    color: #fff;
+
+}
+
+.addButton, .acceptButton, .cancelButton {
+	color: #fff;
     width: fit-content;
     margin: auto;
 }
@@ -14,7 +18,6 @@
 .productListItem:hover {
 	background: #cecece;
 }
-
 
 .productListItemBio {
 	margin: 0 auto 0 15px;
@@ -34,4 +37,86 @@
 
 .productListItemBioCat {
 	font-size: 14px;
+}
+
+.menuRow {
+	display: flex;
+	margin: 10px 0;
+
+}
+
+.productListMenuRow {
+	width: 360px;
+}
+
+.tab {
+	padding: 10px;
+	border: 1px solid #2776f5;
+	cursor: pointer;
+}
+
+.activeTab {
+	background: #2776f5;
+	color: #fff;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.productList {
+	width: 100%;
+	max-height: 816px;
+    overflow: auto;
+}
+
+.cancelButton {
+	background-image: linear-gradient(to bottom left, rgb(84, 87, 87), rgb(94, 96, 95), rgb(103, 105, 102), rgb(113, 113, 110), rgb(122, 122, 118), rgb(132, 131, 126), rgb(141, 140, 133), rgb(151, 149, 141), rgb(160, 158, 149), rgb(170, 166, 157), rgb(179, 175, 164), rgb(189, 184, 172));
+}
+
+.acceptButton {
+	background-image: linear-gradient(to top right, rgb(99, 255, 237), rgb(100, 251, 227), rgb(100, 246, 216), rgb(101, 242, 206), rgb(102, 238, 195), rgb(102, 233, 185), rgb(103, 229, 174), rgb(103, 224, 164), rgb(104, 220, 153), rgb(105, 216, 143), rgb(105, 211, 132), rgb(106, 207, 122));
+}
+
+.productListItemBioStat {
+	margin-top: 10px;
+	display: flex;
+}
+
+.productListItemBioStatItem {
+	margin-right: 10px;
+	position: relative;
+	padding-left: 30px;
+}
+
+.productListItemBioStatItem span {
+	position: absolute;
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: 50%;
+}
+
+.productListItemBioStatLen span {
+	background: #42adf5;
+}
+.productListItemBioStatRes span {
+	background: #ffe330;
+}
+.productListItemBioStatTran span {
+	background: #f2e1b3;
+}
+.productListItemBioStatTranRes span {
+	background: #7d7d7d;
+}
+
+
+.summ {
+	display: none;
+}
+.productListItemCount {
+	margin-right: 25px;
+	text-align: right;
 }

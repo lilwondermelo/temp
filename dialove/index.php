@@ -1,7 +1,3 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/dialove/classes/productsController.class.php';
-$products = new ProductsController();
-?>
 <!DOCTYPE html>
 <html>
     <head>
