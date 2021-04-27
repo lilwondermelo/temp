@@ -1,0 +1,37 @@
+.addButton {
+    background-image: linear-gradient(to bottom right, rgb(101, 115, 255), rgb(101, 122, 251), rgb(102, 129, 246), rgb(102, 136, 242), rgb(103, 143, 238), rgb(103, 150, 233), rgb(104, 158, 229), rgb(104, 165, 224), rgb(105, 172, 220), rgb(105, 179, 216), rgb(106, 186, 211), rgb(106, 193, 207));
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+}
+
+.productListItem {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.productListItem:hover {
+	background: #cecece;
+}
+
+
+.productListItemBio {
+	margin: 0 auto 0 15px;
+}
+
+.productListItemImg {
+	width: 50px;
+	height: 50px;
+	background: #ababab;
+	border-radius: 50%;
+}
+
+.productListItemBioName {
+	font-size: 18px;
+
+}
+
+.productListItemBioCat {
+	font-size: 14px;
+}
