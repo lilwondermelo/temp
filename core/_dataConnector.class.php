@@ -16,11 +16,11 @@ class DataConnector {
     //put your code here
     var $db, $error, $query, $affected_rows=0;
     //установки подключения к базе
-    var $server = "lilwondermelo.space:3306";
+    var $server = "";
     //var $server = '192.168.137.100';
-    var $user = "u1282429_default";
-    var $password = "royalflush236452";
-    var $dbase = "u1282429_default";
+    var $user = "";
+    var $password = "";
+    var $dbase = "";
 
     //подключаем
     public function sqlConnect() {
