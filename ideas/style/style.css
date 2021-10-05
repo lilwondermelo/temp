@@ -1,0 +1,570 @@
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-display: swap; }
+
+  .systemMessageOverlay {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh);
+    background-color: rgba(128,128,128, 0.8);
+    z-index: 100;
+    display: none;
+}
+
+.systemCloseButton{
+    min-width: 100px;
+    min-height: 30px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 3px;
+    top: 0px;
+    position: relative;
+    left: 80%;
+    color: white;
+    cursor: pointer;    
+}
+.systemCloseButton:hover{
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+}
+.systemMessageText{
+    width: 90%;
+    height: 150px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 50px;
+    align-content: center;
+    align-items: center;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, input, .heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a, .nav > li > a {
+  font-family: "Muller", sans-serif; }
+
+body {
+  overflow-x: hidden;
+  font-size: 18px;
+  font-weight: 300; 
+  margin: 0;
+  padding:  0;
+ padding-top:  32px;
+ }
+   
+
+h1 {
+  font-size: 72px;
+  font-weight: 300; }
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0; }
+
+
+
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 7.9vh; }
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  margin-bottom: 3.7vh; }
+
+h5 {
+     letter-spacing: .05em;
+     font-size: 20px;
+    font-weight: 500;
+    color: #0d0f0e;
+}
+     }
+
+strong {
+  font-weight: 500;
+  color: #3CAD80; }
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 1.9em;
+  line-height: 1.7; }
+
+
+  .strong {
+    color: #3cad80;
+  }
+
+.innerContent {
+  max-width: 1420px;
+  width: 100%;
+}
+
+
+.block {
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  max-width: 100vw;
+  min-width: 100vw;
+}
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: #3cad80;
+}
+
+
+.header {
+  height: 100px;
+  position: relative;
+      box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+          padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+.headerLogo{
+  width: 155px;
+  height: 51px;
+  margin-right: 3.2vw;
+}
+
+.img {
+  position: relative;
+}
+
+.img > img  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+
+}
+
+.headerMenu {
+  margin-right: auto;
+}
+
+.headerMenuItem {
+  font-size: 14px;
+  letter-spacing: .02em;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #4c665b;
+    font-weight: 500;
+    cursor:  pointer;
+  margin:  0 1vw;
+      transition: all .2s;
+}
+
+.headerMenuItem:hover {
+  color: #3cad80;
+}
+
+
+.cabinetTitle {
+  background-color: #f7f7f7;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+}
+
+
+
+
+
+.authTitle, .cabinetTitle .innerContent {
+  
+  
+  padding: 15px;
+  min-height: 60px;
+   width: 100%;
+       line-height: 1.6;
+}
+
+  .authTitle h2, .cabinetTitle h2 {
+ 
+  font-weight: 700;
+    letter-spacing: .05em;
+ }
+
+
+.authTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+  .authTitle h2 {
+ }
+
+
+  .cabinetTitle h2 {
+     font-size: 30px;
+     line-height: 36px;
+ }
+
+    
+.cabinetSubtitle, .cabinetMenuItem {
+font-size: 12.8px;
+    display: inline-block;
+line-height: 1.2;
+  text-transform: uppercase;
+    
+    color: #4c665b;
+}
+
+.cabinetMenuItem {
+  color: rgba(102,102,102,0.85);
+    font-weight: 500;
+    padding: 10px 0;
+}
+.cabinetSubtitle {
+
+  letter-spacing: .05em;
+      font-weight: 300;
+          line-height: 1.2;
+          color: #0d0f0e;
+}
+
+ .authForm {
+  width: 100vw;
+  max-width: 1440px;
+  display: flex;
+  padding:  0 20px;
+ }
+
+ .authFormBlock {
+ width: 50%;
+ padding:  0 30px;
+ }
+ .authInput {
+  outline: none;
+  height: 2.507em;
+  max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+        transition: color .3s, border .3s, background .3s, opacity .3s;
+      border: 1px solid #ddd;
+    box-shadow: none;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: #c9d1ce;
+        padding: 0 5px;
+            font-size: 18px;
+                font-weight: 300;
+                    margin-bottom: 2em;
+                        box-sizing: border-box;
+                            color: #333;
+
+ }
+
+ input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+}
+
+.authFormBlock p {
+color: #222;
+font-weight: bold;
+    display: block;
+    font-size: .9em;
+    margin-bottom: 0.4em;
+    line-height: 1.7;
+        font-family: "Muller";
+} 
+
+.authFormBlock h5 {
+  font-size: 18px;
+  margin-bottom: 7.9vh;
+  } 
+
+  .authButton {
+        background-color: #3cad80;
+        font-size: 1em;
+            touch-action: auto !important;
+            color: #fff;
+            border-color: rgba(0,0,0,0.05);
+                letter-spacing: .03em;
+                cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+        text-decoration: none;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    border-radius: 0;
+    margin-top: 0;
+    margin-right: 1em;
+    text-shadow: none;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding: 0 1.2em;
+    max-width: 100%;
+    transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .authFormBlockRight {
+    border-left: 1px solid #ececec;
+  }
+
+
+  .cabinetArea {
+    padding-top: 30px;
+    
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+  }
+
+  .cabinetSidebar {
+        max-width: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0 15px 30px;
+  }
+
+  .cabinetMain  {
+        max-width: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    padding: 0 30px 30px 30px;
+    width: 100%;
+  }
+
+  .cabinetSidebarInfoImg {
+    width: 70px;
+    height: 70px;
+    
+  }
+    .cabinetSidebarInfoImg img {
+      border-radius: 50%;
+    }
+
+
+.cabinetSidebarMenu {
+
+  margin-top: 15px;
+}
+
+.cabinetSidebarMenuItem {
+  cursor: pointer;
+      transition: all .2s;
+  position: relative;
+  font-weight: 700;
+  line-height: 1.6;
+  color: rgba(102,102,102,0.85);
+      font-size: 12.8px;
+      letter-spacing: .02em;
+          padding: 10px 0;
+}
+.cabinetSidebarMenuItemActive, .cabinetSidebarMenuItem:hover {
+  color: rgba(17,17,17,0.85);
+}
+
+.cabinetSidebarMenuItem + .cabinetSidebarMenuItem {
+    border-top: 1px solid #ececec;
+}
+
+.cabinetSidebarMenuItem:before {
+      transition: all 0.3s;
+  right: -2px;
+    z-index: 1;
+    left: auto;
+    width: 3px;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #3cad80;
+    content: " ";
+    top: 0;
+    transform: translateX(-50%);
+        box-sizing: border-box;
+}
+
+.cabinetSidebarMenuItemActive:before, .cabinetSidebarMenuItem:hover:before  {
+  opacity: 1;
+}
+
+
+.cabinetSidebarMenuItemActiveHover:before {
+  opacity:  0;
+}
+
+.dashboardButtons {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.dashboardButtonsItem {
+    display: block;
+    margin-right: 20px;
+    margin-bottom:  15px;
+    width: 300px;
+    cursor:  pointer;
+    border-radius: 5px;
+    padding: 20px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px;
+    transition: all .3s;
+    color: #3cad80;
+}
+
+.dashboardButtonsItem:hover {
+  color:  #fff;
+  background: #333;
+}
+
+.shop {
+      padding-top: 17.58vh !important;
+    padding-bottom: calc(17.58vh - 30px) !important;
+}
+
+.shopInner {
+  max-width: 1072px;
+  width: 100%;
+}
+
+.shopMenuItem {
+    text-align: center;
+    bmargin: 0 1.1em;
+    border: 1px solid #3CAD80;
+    background: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #0D0F0E;
+    padding:  15px 30px;
+        transition: all .2s;
+        line-height: 1.1em;
+        height: 51px;
+        flex: auto;
+        cursor:  pointer;
+        margin-right: 1.1em;
+        box-sizing: border-box;
+}
+
+
+.shopMenuItemActive, .shopMenuItem:hover {
+      background-color: #3CAD80;
+    color: #fff;
+}
+
+.adminBar {
+  direction: ltr;
+    color: #ccc;
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    line-height: 2.46153846;
+    height: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 600px;
+    z-index: 99999;
+    background: #23282d;
+}
+
+.adminBarWp, .adminBarHome {
+  width: 20px;
+  height: 20px;
+  margin:  auto 7px;
+}
+
+.adminBarLogo {
+  display: flex;
+}
+.adminBarTitle {
+  font-size: 13px;
+  color: #eee;
+  font-weight: 600;
+}
+
+.adminBarLogo {
+  cursor: pointer;
+}
+.adminBarLogo:hover {
+  background-color: #32373C;
+}
+.adminMenuItem {
+  display: flex;
+  padding:  8px 0;
+}
+.adminMenuItemIcon {
+  width: 20px;
+  height: 20px;
+  margin:  auto 8px;
+}
+
+.adminMenuItem {
+  width: 160px;
+  cursor:  pointer;
+    background-color: #23282d;
+}
+.adminMenuItemText {
+  color: #eee;
+  margin:  auto 0;
+  font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    max-height: 14px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    padding-top: 3px;
+
+}
+.adminMenuItem:hover .adminMenuItemText {
+   color: #72aee6;
+}
+.adminMenuItem:hover {
+  background: #191E23;
+ 
+}
+
